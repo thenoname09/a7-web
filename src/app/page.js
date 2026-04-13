@@ -1,10 +1,12 @@
+import Banner from "@/components/homepage/Banner";
 
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center">
-     <h1 className="" > helllo</h1>
-      <h1></h1>
+    <div className=" bg-rose-600  ">
+      <div className="min-w-[80vh] mx-auto">
+        <Banner></Banner>
+      </div>
       
     </div>
   );
