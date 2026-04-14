@@ -14,15 +14,15 @@ const getStatusStyle = (status) => {
 
 
 const FriendCard = ({ friend }) => {
-    const {name,picture, days_since_contact,status ,tags} = friend
+    const { id, name,picture, days_since_contact,status ,tags} = friend
     return (
-           <Link href={`/${friend.id}`} className="card bg-base-100 w-full h-full shadow-sm p-2 pt-5 ">
+           <Link href={`/friends/${id}`} className="card bg-base-100 w-full h-full shadow-sm p-2 pt-5 ">
       <figure className="">
         <Image src={picture} alt={name} height={80} width={80} className="object-cover rounded-full " />
       </figure>
       <div className="card-body text-center items-center flex flex-col grow">
         <h2 className="card-title ">{friend.name}</h2>
-        
+        <p className=' font-normal text-gray-400  text-sm'>{days_since_contact}d ago</p>
        
         <div className="flex flex-wrap justify-center gap-1 mb-3 mt-2">
           {tags.map((tag) => (
@@ -32,7 +32,7 @@ const FriendCard = ({ friend }) => {
           ))}
     
         </div>
-          <p className={` mt-auto font-medium items-center text-center  text-white text-sm px-4 py-1 rounded-full ${getStatusStyle(status)}`} >{status}</p>
+          <p className={` mt-auto font-medium items-center text-center  text-white text-sm px-4 py-1 rounded-xl ${getStatusStyle(status)}`} >{status}</p>
          
       </div>
     </Link>

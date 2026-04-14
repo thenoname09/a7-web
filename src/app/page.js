@@ -8,7 +8,6 @@ export default function Home() {
     <div className=" bg-rose-600  ">
       <div className="min-w-[80vh] mx-auto">
         <Banner></Banner>
-        
         <Friends />
       </div>
       
