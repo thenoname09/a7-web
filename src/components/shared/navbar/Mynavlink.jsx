@@ -8,7 +8,7 @@ const Mynavlink = ({ href, children }) => {
     return (
   <Link
       href={href}
-      className={`flex items-center rounded-xl p-2 px-2 font-semibold transition-colors hover:text-purple-500 ${
+      className={`flex items-center rounded-xl p-2 px-2 font-semibold  hover:text-purple-500 ${
         pathname === href ? "bg-emerald-800 text-white" : ""
       }`}
     >

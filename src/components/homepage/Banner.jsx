@@ -19,7 +19,7 @@ const Banner = () => {
                 <div className="bg-white rounded p-8"> 
                     <p className="font-semibold text-3xl">3</p>
                     <p  className="text-lg">Total Number</p>
-                </div >
+                </div > 
                 <div className="bg-white rounded p-8 "> 
                     <p className="font-semibold text-3xl">3</p>
                     <p className="text-lg" >On Track</p>
