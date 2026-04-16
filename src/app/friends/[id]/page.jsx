@@ -28,7 +28,7 @@ const FriendDetailPage = async ({ params }) => {
 
         {/* left column */}
         <div className="lg:col-span-1">
-          <div className="card bg-white border border-red-500 shadow-sm p-6 flex flex-col items-center text-center gap-4">
+          <div className="card bg-white shadow-lg p-6 flex flex-col items-center text-center gap-4">
             <Image src={picture} alt={name} width={120} height={120} className="rounded-full object-cover" />
             <h2 className="text-2xl font-bold">{name}</h2>
             <span className={`px-4 py-1 rounded-full text-sm font-semibold text-white ${getStatusStyle(status)}`}>
@@ -36,7 +36,7 @@ const FriendDetailPage = async ({ params }) => {
             </span>
               <div className="flex flex-wrap justify-center gap-1 mb-3 mt-1">
           {tags.map((tag) => (
-            <span key={tag} className=" font-medium badge bg-emerald-100 text-emerald-900 text-xs p-3 rounded-full">
+            <span key={tag} className=" font-medium badge  bg-emerald-100 text-emerald-900 text-xs p-3 rounded-full">
               {tag}
             </span>
           ))}
@@ -50,9 +50,9 @@ const FriendDetailPage = async ({ params }) => {
 
           </div>
            <div className="flex flex-col gap-2 w-full mt-2 ">
-              <button className="btn bg-white  w-full"><MdAlarm /> Snooze 2 Weeks</button>
-              <button className="btn bg-white btn-block w-full"><BsArchiveFill /> Archive</button>
-              <button className="btn bg-white btn-soft btn-error w-full"><FaTrash /> Delete</button>
+              <button className="btn bg-white shadow-lg  w-full"><MdAlarm /> Snooze 2 Weeks</button>
+              <button className="btn bg-white shadow-lg btn-block w-full"><BsArchiveFill /> Archive</button>
+              <button className="btn bg-white shadow-lg btn-soft btn-error w-full"><FaTrash /> Delete</button>
             </div>
         </div>
 
@@ -76,8 +76,8 @@ const FriendDetailPage = async ({ params }) => {
           </div>
 
           {/* Relationship Goal */}
-          <div className="card bg-base-100 shadow-sm p-6">
-            <div className="flex justify-between items-center">
+          <div className="card bg-base-100 shadow-lg p-6">
+            <div className="flex justify-between items-center ">
                 <div>
                     <h3 className='text-xl font-medium'>Relationship Goal</h3>
                    <p className=' mt-3 font-normal text-[#64748B text-lg '>Connect every <span className='font-semibold text-lg'>{goal} days</span></p>
@@ -87,7 +87,7 @@ const FriendDetailPage = async ({ params }) => {
           </div>
 
           {/* Quick Check-In */}
-          <div className="card bg-base-100 shadow-sm p-6  ">
+          <div className="card bg-base-100 shadow-lg p-6  ">
             <h3 className='font-medium text-xl text-[#244D3F]'>Quick Check-In</h3>
             <CheckIn friendName={name} />
           

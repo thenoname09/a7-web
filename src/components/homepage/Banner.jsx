@@ -16,21 +16,21 @@ const Banner = () => {
             
             
             <div className="grid  sm:grid-cols-2 md:grid-cols-4 gap-4 mt-10 sm:mt-14 w-full">
-                <div className="bg-white rounded p-8"> 
-                    <p className="font-semibold text-3xl">3</p>
+                <div className="bg-white rounded p-8 shadow-sm "> 
+                    <p className="font-semibold text-3xl">8</p>
                     <p  className="text-lg">Total Number</p>
                 </div > 
-                <div className="bg-white rounded p-8 "> 
+                <div className="bg-white rounded p-8 shadow-sm "> 
                     <p className="font-semibold text-3xl">3</p>
                     <p className="text-lg" >On Track</p>
                 </div >
-                <div className="bg-white  rounded p-8"> 
+                <div className="bg-white  rounded p-8 shadow-sm"> 
                     <p className="font-semibold text-3xl">3</p>
-                    <p className="text-lg">Need Attention</p>
+                    <p className="text-lg">Almost due</p>
                 </div> 
-                <div className="bg-white rounded p-8"> 
-                    <p className="font-semibold text-3xl">3</p>
-                    <p className="text-lg">Interactions This Month</p>
+                <div className="bg-white rounded p-8 shadow-sm"> 
+                    <p className="font-semibold text-3xl">2</p>
+                    <p className="text-lg">Overdue</p>
                 </div>
             </div>
         </div>
