@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/shared/navbar/Navbar";
 import Providers from "@/app/lib";
+import Footer from "@/components/shared/Footer";
 
 
 
@@ -32,7 +33,7 @@ export default function RootLayout({ children }) {
         <main className="bg-[#F8FAFC]">
           {children}
         </main>
-      
+      <Footer></Footer>
        </Providers>
       </body>
     

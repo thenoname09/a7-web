@@ -6,7 +6,8 @@ import Friends from "@/components/homepage/Friends";
 export default function Home() {
   return (
     <div className=" bg-[#F8FAFC]  ">
-      <div className="min-w-[80vh] mx-auto">
+      {/* "min-w-[80vh] */}
+      <div className="mx-auto min-w-[80%]">
         <Banner></Banner>
         <Friends />
       </div>
