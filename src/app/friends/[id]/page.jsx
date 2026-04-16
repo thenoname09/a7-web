@@ -3,6 +3,7 @@ import { FaPhone, FaVideo, FaTrash } from "react-icons/fa";
 import { BsChatFill, BsArchiveFill } from "react-icons/bs";
 import { MdAlarm, MdEdit } from "react-icons/md";
 import Image from 'next/image';
+import CheckIn from '@/components/ui/CheckIn';
 
 const getStatusStyle = (status) => {
   if (status === "On-track") return "bg-[#244D3F] ";
@@ -35,7 +36,7 @@ const FriendDetailPage = async ({ params }) => {
             </span>
               <div className="flex flex-wrap justify-center gap-1 mb-3 mt-1">
           {tags.map((tag) => (
-            <span key={tag} className=" font-medium badge bg-emerald-100 text-emerald-900 text-xs p-4 rounded-full">
+            <span key={tag} className=" font-medium badge bg-emerald-100 text-emerald-900 text-xs p-3 rounded-full">
               {tag}
             </span>
           ))}
@@ -88,11 +89,7 @@ const FriendDetailPage = async ({ params }) => {
           {/* Quick Check-In */}
           <div className="card bg-base-100 shadow-sm p-6  ">
             <h3 className='font-medium text-xl text-[#244D3F]'>Quick Check-In</h3>
-            <div className='grid  sm:grid-cols-3 gap-4 pt-4 items-center justify-center '>
-                <button className="btn bg-[#F8FAFC] gap-2 py-4 w-full md:py-12 text-[#1F2937] "><FaPhone /> Call</button>
-                <button className="btn bg-[#F8FAFC] gap-2 py-4 md:py-12 text-[#1F2937] "><BsChatFill /> Text</button>
-                <button className="btn bg-[#F8FAFC] gap-2 py-4 md:py-12 text-[#1F2937] "><FaVideo /> Video</button>
-            </div>
+            <CheckIn friendName={name} />
           
           </div>
 
