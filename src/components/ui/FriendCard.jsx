@@ -16,7 +16,7 @@ const getStatusStyle = (status) => {
 const FriendCard = ({ friend }) => {
     const { id, name,picture, days_since_contact,status ,tags} = friend
     return (
-           <Link href={`/friends/${id}`} className="card bg-base-100 w-full h-full shadow-sm p-2 pt-5 ">
+           <Link href={`/friends/${id}`} className="card bg-white w-full h-full shadow-sm p-2 pt-5 hover:shadow-xl  ">
       <figure className="">
         <Image src={picture} alt={name} height={80} width={80} className="object-cover rounded-full " />
       </figure>

@@ -62,15 +62,15 @@ const FriendDetailPage = async ({ params }) => {
           {/* Stats */}
           <div className="grid sm:grid-cols-3 gap-4">
             <div className="card bg-base-100 shadow-sm p-5 text-center">
-              <p className="text-3xl font-bold text-purple-600">{days_since_contact}</p>
+              <p className="text-3xl font-bold text-[#244D3F]">{days_since_contact}</p>
               <p className="text-gray-500 text-sm mt-1">Days Since Contact</p>
             </div>
             <div className="card bg-base-100 shadow-sm p-5 text-center">
-              <p className="text-3xl font-bold text-purple-600">{goal}</p>
+              <p className="text-3xl font-bold text-[#244D3F]">{goal}</p>
               <p className="text-gray-500 text-sm mt-1">Goal (days)</p>
             </div>
             <div className="card bg-base-100 shadow-sm p-5 text-center">
-              <p className="text-2xl font-bold text-purple-600">{next_due_date}</p>
+              <p className="text-2xl font-bold text-[#244D3F]">{next_due_date}</p>
               <p className="text-gray-500 text-sm mt-1">Next Due Date</p>
             </div>
           </div>

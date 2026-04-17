@@ -15,9 +15,9 @@ const CheckIn = ({friendName }) => {
   };
     return (
        <div className='grid  sm:grid-cols-3 gap-4 pt-4 items-center justify-center '>
-                <button onClick={() => handleCheckIn("Call", friendName )} className= "btn bg-[#F8FAFC] gap-2 py-4 w-full md:py-12 text-[#1F2937] "><FaPhone /> Call</button>
-                <button onClick={() => handleCheckIn("Text", friendName)} className="btn bg-[#F8FAFC] gap-2 py-4 md:py-12 text-[#1F2937] "><BsChatFill /> Text</button>
-                <button  onClick={() => handleCheckIn("Video", friendName)} className="btn bg-[#F8FAFC] gap-2 py-4 md:py-12 text-[#1F2937] "><FaVideo /> Video</button>
+                <button onClick={() => handleCheckIn("Call", friendName )} className= "hover:shadow-lg btn bg-[#F8FAFC] gap-2 py-4 w-full md:py-12 text-[#1F2937] "><FaPhone /> Call</button>
+                <button onClick={() => handleCheckIn("Text", friendName)} className="btn hover:shadow-lg bg-[#F8FAFC] gap-2 py-4 md:py-12 text-[#1F2937] "><BsChatFill /> Text</button>
+                <button  onClick={() => handleCheckIn("Video", friendName)} className="btn hover:shadow-lg  bg-[#F8FAFC] gap-2 py-4 md:py-12 text-[#1F2937] "><FaVideo /> Video</button>
             </div>
     );
 };
