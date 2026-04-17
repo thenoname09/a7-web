@@ -13,7 +13,7 @@ const getStatusStyle = (status) => {
 
 const FriendDetailPage = async ({ params }) => {
 
-    const res = await fetch("http://localhost:3000/friends.json");
+    const res = await fetch("https://a7-web.vercel.app/friends.json");
     const friends = await res.json();
     const { id } = await params;
     const friend = friends.find((f) => f.id === parseInt(id))
